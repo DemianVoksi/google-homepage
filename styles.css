@@ -12,6 +12,7 @@ body {
   color: #222;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -51,6 +52,7 @@ div.menu-links a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-grow: 1;
 }
 
 .logo {
@@ -86,4 +88,75 @@ input[type="text"] {
 
 input[type="text"]:focus {
   outline: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #F8F9FA;
+  border: 1px solid #F8F9FA;
+  border-radius: 4px;
+  color: #222;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 1px solid #DFE1E5;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #E0E0E0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: 1px solid #C0C0C0;
+  align-self: flex-end;
+}
+
+.left-links {
+  width: 30%;
+  padding: 10px;
+  margin: -20px;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.right-links {
+  width: 20%;
+  padding: 20px;
+  margin: -20px;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div.footer-links a:link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #808080
+}
+
+div.footer-links a:hover,
+div.footer-links a:visited {
+  font-size: 14px;
+  text-decoration: underline;
+  color: #808080
 }
